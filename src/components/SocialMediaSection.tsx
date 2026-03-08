@@ -14,7 +14,7 @@ export default function SocialMediaSection({ posts }: SocialMediaSectionProps) {
       id="social"
       sx={{
         px: { xs: '24px', sm: '40px', md: '60px' },
-        py: { xs: '80px', md: '120px' },
+        py: { xs: '80px', md: '60px' },
         borderTop: '1px solid rgba(255,255,255,0.07)',
       }}
     >

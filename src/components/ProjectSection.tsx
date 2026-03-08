@@ -33,7 +33,7 @@ export default function ProjectSection({ project, index }: ProjectSectionProps) 
       ref={ref}
       sx={{
         px: { xs: '24px', sm: '40px', md: '60px' },
-        py: { xs: '80px', md: '120px' },
+        py: { xs: '80px', md: '60px' },
         borderTop: '1px solid rgba(255,255,255,0.07)',
       }}
     >
@@ -236,7 +236,7 @@ export default function ProjectSection({ project, index }: ProjectSectionProps) 
 
         {/* Description + achievements */}
         <Grid size={{ xs: 12, md: 4 }}>
-          <Box sx={{ position: { md: 'sticky' }, top: { md: '120px' } }}>
+          <Box sx={{ position: { md: 'sticky' }, top: { md: '60px' } }}>
             <Stack spacing={5}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -276,13 +276,6 @@ export default function ProjectSection({ project, index }: ProjectSectionProps) 
         </Grid>
       </Grid>
 
-      {/* Index label */}
-      <Box sx={{ mt: 8, display: 'flex', alignItems: 'center' }}>
-        <Typography sx={{ color: 'rgba(255,255,255,0.06)', fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', flexShrink: 0 }}>
-          {String(index + 1).padStart(2, '0')} / 04
-        </Typography>
-        <Box sx={{ height: '1px', flex: 1, ml: 3, backgroundColor: 'rgba(255,255,255,0.04)' }} />
-      </Box>
     </Box>
   );
 }
