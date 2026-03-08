@@ -7,6 +7,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const navLinks = [
   { label: 'Work', href: '#work' },
+  { label: 'Social', href: '#social' },
   { label: 'About', href: '#about' },
   { label: 'Resume', href: '/resume/Reilly-Thomson-Resume.pdf', download: true },
 ];

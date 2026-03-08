@@ -4,8 +4,12 @@ import Hero from '../components/Hero';
 import Marquee from '../components/Marquee';
 import About from '../components/About';
 import ProjectSection from '../components/ProjectSection';
+import SocialMediaSection from '../components/SocialMediaSection';
+import WebpagesSection from '../components/WebpagesSection';
+import NewsletterSection from '../components/NewsletterSection';
 import Footer from '../components/Footer';
 import { projects } from '../data/projects';
+import { socialPosts, webpages, newsletters } from '../data/socialPosts';
 
 export default function Home() {
   return (
@@ -25,6 +29,10 @@ export default function Home() {
             <ProjectSection key={project.id} project={project} index={index} />
           ))}
         </Box>
+
+        <SocialMediaSection posts={socialPosts} />
+        <WebpagesSection pages={webpages} />
+        <NewsletterSection newsletters={newsletters} />
       </main>
 
       <Footer />
